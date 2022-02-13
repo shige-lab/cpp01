@@ -1,10 +1,5 @@
 #include "Zombie.hpp"
 
-void randomChump(std::string name) {
-	Zombie zombie(name);
-	zombie.announce();
-}
-
 Zombie *zombieHorde(int N, std::string name) {
 	int i = 0;
 	if (N <= 0) {
