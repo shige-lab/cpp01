@@ -2,11 +2,12 @@
 
 static void zombie_life(std::string name, int n) {
 	Zombie *zombies;
+	int i = 0;
 	zombies = zombieHorde(n, name);
 	if (zombies == NULL)
 		return;
-	for (int i = 0; i < n; i++) {
-		zombies[i].announce();
+	while (i < n) {
+		zombies[i++].announce();
 	}
 	delete[] zombies;
 }
